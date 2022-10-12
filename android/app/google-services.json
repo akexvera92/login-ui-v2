@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1022717564663",
+    "project_id": "inspiring-hope-321800",
+    "storage_bucket": "inspiring-hope-321800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022717564663:android:4dfe7b00b84a7f3bbf65f2",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022717564663-1p7daitpiav704pebhg1khnur935ol9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI5_uINVZkrlmNvFSIK0auBweSBdR52_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022717564663-1p7daitpiav704pebhg1khnur935ol9n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1022717564663-2jgmadtelndgniqf2vd3kr5t9ahug9ov.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.login"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
