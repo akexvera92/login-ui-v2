@@ -38,6 +38,8 @@ class _LoginpageState extends State<Loginpage> {
 //nos sirve para liberar la memoria asignada a las variables cuando se quita el objeto de estado.
   @override
   void dispose() {
+    _emailController.dispose();
+    _passawordController.dispose();
     super.dispose();
   }
 

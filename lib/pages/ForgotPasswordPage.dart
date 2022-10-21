@@ -31,8 +31,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: cuentaEmail);
       showDialog<void>(
         context: context,
+        //nos sirve para descartar una ruta
         barrierDismissible: true,
         builder: (BuildContext dialogContext) {
+          //nos mostrara un mensaje o una pantalla
           return AlertDialog(
             title: const Text('Recuperacion de contraseña'),
             content: Text('Un email fue enviado a la cuenta $cuentaEmail'),
@@ -47,12 +49,16 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           );
         },
       );
-    } on FirebaseAuthException catch (e) {
+    }
+    //es una excepcion de fire base en caso de no encontrar el correo
+    on FirebaseAuthException catch (e) {
       print(e);
       showDialog<void>(
         context: context,
+        //nos sirve para descartar una ruta
         barrierDismissible: true,
         builder: (BuildContext dialogContext) {
+          //nos mostrara una alerta en caso de no encontrar
           return AlertDialog(
             title: const Text('Firebase Error'),
             content: Text('Email error:$e'),
